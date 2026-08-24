@@ -1,0 +1,7 @@
+/* write css properties directly */
+h1{
+    color: black;
+    background-color: orange;
+    font-family: 'Times New Roman', Times, serif;
+
+}
