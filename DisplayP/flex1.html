@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Justify Content : to move ur content(which follows display: flex) in X axis (L TO R) 
+        align items : to move ur content(which follows display: flex) in Y axis (T TO B) */
+
+        .product{
+            display: flex;
+            justify-content: center;
+            /* flex-direction: column; - to chnage the direction to column or others bcoz default is row. */
+            gap: 30px;
+            height: 400px;
+            align-items: center;
+
+            background-color:#f2f2f2;
+            border: 1px solid black;
+        }
+
+
+        .box{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex gives display in 1 dimensional - Either row or column - Default : Row -->
+     <div class="product">
+        <div class="box">Cake</div>
+        <div class="box">Cookie</div>
+        <div class="box">Pastry</div>
+
+        <!-- Column Layout : one below each other. 
+        Row Layout : Side by side  -->
+
+     </div>
+</body>
+</html>
