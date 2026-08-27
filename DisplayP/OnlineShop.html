@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 10px;
+
+        }
+
+        .product{
+            border: 1px solid black;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px black;
+            padding-bottom: 15px;
+            background-color: white;
+            transition: 1s ease;
+        }
+
+        .product img{
+            border-radius: 12px;
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .product button{
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 12px;
+            cursor: pointer;
+
+        }
+
+        .product:hover{
+            transform: scale(1.02);
+
+        }
+
+        h1{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Amazon</h1>
+    <h2>Welcome Customer 🛍️</h2>
+
+    <div class="parent">
+        
+        <!-- 1 -->
+        <div class="product">
+            <img src="https://images.pexels.com/photos/12153458/pexels-photo-12153458.jpeg">
+            <h2>Cups</h2>
+            <p><del>$100</del> <mark>$50</mark> </p>
+            <button>Add To Cart</button>
+        </div>
+
+        <!-- 2 -->
+        <div class="product">
+            <img src="https://images.pexels.com/photos/6952331/pexels-photo-6952331.jpeg">
+            <h2>Flower Vase</h2>
+            <p><del>$200</del> <mark>$100</mark> </p>
+            <button>Add To Cart</button>
+        </div>
+
+        <!-- 3 -->
+        <div class="product">
+            <img src="https://images.pexels.com/photos/7018400/pexels-photo-7018400.jpeg">
+            <h2>Sofa</h2>
+            <p><del>$2500</del> <mark>$1950</mark> </p>
+            <button>Add To Cart</button>
+        </div>
+
+        <!-- 4 -->
+        <div class="product">
+            <img src="https://images.pexels.com/photos/7953286/pexels-photo-7953286.jpeg">
+            <h2>HandBags</h2>
+            <p><del>$500</del> <mark>$400</mark> </p>
+            <button>Add To Cart</button>
+        </div>
+
+        <!-- 5 -->
+        <div class="product">
+            <img src="https://images.pexels.com/photos/6675408/pexels-photo-6675408.jpeg">
+            <h2>Dress</h2>
+            <p><del>$350</del> <mark>$250</mark> </p>
+            <button>Add To Cart</button>
+        </div>
+
+        <!-- 6 -->
+        <div class="product">
+            <img src="https://images.pexels.com/photos/14007163/pexels-photo-14007163.jpeg">
+            <h2>Toys</h2>
+            <p><del>$150</del> <mark>$90</mark> </p>
+            <button>Add To Cart</button>
+        </div>
+
+    </div>
+</body>
+</html>
