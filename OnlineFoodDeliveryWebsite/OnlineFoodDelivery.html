@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery Website</title>
+    <style>
+        body{
+            font-family: fantasy;
+            background-color: #f8f8f8;
+            margin: 0;
+            text-align: center;
+        }
+
+        .menu{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .food{
+            border: 1px solid black;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px black;
+            padding-bottom: 15px;
+            background-color: white;
+            transition: 1s ease;
+            color: purple;
+            margin-bottom: 50px;
+        }
+
+        .food img{
+            border-radius: 12px;
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            
+        }
+
+        .food button{
+            background-color: blue;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .content button{
+            background-color: yellow;
+            border: none;
+            color: black;
+            padding: 10px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .video-container{
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            margin-bottom: 50px;
+        }
+
+        .video-container iframe{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .about{
+            background-color: lightgray;
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+
+        .reviews{
+            display: grid;
+            width: 75%;
+            margin: auto;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .review {
+            padding: 25px;
+            border-left: 5px solid orange;
+            font-style: italic;
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        .call{
+            background-color: black;
+            border-radius: 12px;
+            padding: 10px;
+            margin-top: 50px;
+            color: white;
+
+        }
+
+        h1{
+            font-size: 50px;
+        }
+
+        h2{
+            font-size: 35px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .product:hover{
+            transform: scale(1.02);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="video-container">
+
+    <iframe height="1000" width="2000" src="https://www.youtube.com/embed/xPPLbEFbCAo?autoplay=1&mute=1" title="Restaurant Ad Video Template (Editable)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="content">
+        <h1>Welcome to Cloud Kitchen</h1>
+        <p>Delicious food delivered to your doorstep 🚚</p>
+        <button>View Menu</button>
+
+    </div>
+
+    </div>
+
+
+    <h1>Our BestSellers</h1>
+
+    <div class="menu">
+
+        <div class="food">
+            <img src="https://images.pexels.com/photos/19786235/pexels-photo-19786235.jpeg">
+            <h2>Pizza</h2>
+            <p>$100</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.pexels.com/photos/37180268/pexels-photo-37180268.jpeg">
+            <h2>Pasta</h2>
+            <p>$110</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.pexels.com/photos/14565935/pexels-photo-14565935.jpeg">
+            <h2>Croissant</h2>
+            <p>$100</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.pexels.com/photos/6416558/pexels-photo-6416558.jpeg">
+            <h2>Sandwich</h2>
+            <p>$95</p>
+            <button>Order Now</button>
+        </div>
+
+    </div>
+
+    <div class="about">
+        <h2> About Us</h2>
+        <p>We are passionate Food Lover</p>
+    </div>
+
+    <h2>What Our Customer Say ?</h2>
+
+    <div class="reviews">
+
+        <div class="review">
+            "Super tasty food and on-time delivery - Charles"
+        </div>
+
+        <div class="review">
+            "Better than restaurant food Highly Recommended - John K"
+        </div>
+
+        <div class="review">
+            "Nice Food Do visit, Must eat - Mike P"
+        </div>
+
+        <div class="review">
+            "Food Highly Recommended - Joe"
+        </div>
+
+    </div>
+
+    <div class="call">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact">
+        <p>Email:info@cloudkitchen.com | Call: +91 7324568912</p>
+    </div>
+
+    </div>
+    
+</body>
+</html>
