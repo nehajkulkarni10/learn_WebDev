@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+
+    <script>
+
+       // <!-- Variables - used to store data. -->
+    //<!-- Trick - "Text data format " -->
+    // <!-- number - write directly  -->
+
+    // 1. keyword - var
+    // <!-- Syntax VariableType VariableName = Value -->
+
+        var username = "Prashant"
+        console.log(username)
+
+        var age = 23
+        console.log(age)
+
+    // Disadvantage of var keyword - it allows using same variable name and updates the previous value
+
+        var phoneno = 82367408
+
+        var phoneno = 8613084
+        console.log(phoneno)
+
+
+    //2. Keyword - let
+
+    // "let" protects data. it doesnt allow usage of same variable name
+
+    let email = "abc123@gmail.com"
+    console.log(email)
+
+    // let email = "xyz@gmail.com" - throws error 
+
+    // Disadvantage - If u used the same variable name w/o using "let" keyword, it will update the value. 
+
+    let review = 4.5
+
+    review = 3.6
+
+    console.log(review)
+    
+    </script>
+</body>
+</html>
