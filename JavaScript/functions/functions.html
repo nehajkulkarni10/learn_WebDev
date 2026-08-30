@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+    <button onclick="Greet()">Login</button>
+    
+    <script>
+        // We Create Function - To Do Task
+
+        // function - keyword
+        //symbol : ()
+
+        //Eg1 : Task to write a logic of bill calculation.
+
+        function BillCalculation(){
+            //Body of Function - Instruction of task 
+
+        var product1 = "Bread"
+        var product2 = "Milk"
+        var product3 = "Oats"
+
+        var price1 = 150
+        var price2 = 50
+        var price3 = 200
+
+        var finalBill = price1 + price2 + price3
+
+        console.log("The Total Bill is " + finalBill)
+
+        }
+
+        BillCalculation() // calling of function
+
+        // Task 2: print welcome user
+
+        function Greet(){
+            console.log("Welcome User")
+
+        }
+        // Greet() - no function call. but called in html button tag
+
+        //3. Function with parameter 
+        // Addition of 2 numbers
+
+        // function funcName(Parameters)
+
+        function Addition(num1, num2){
+
+            var result = num1 + num2
+
+            console.log("Addition of 2 numbers is " + result)
+        }
+        Addition(2, 5)
+ 
+    </script>
+</body>
+</html>
