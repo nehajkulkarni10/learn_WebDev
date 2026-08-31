@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Conditional
+
+        //1. if(Condition) : If ill only gives o/p when condition is true
+
+        // let age = 22
+
+        // if(age>=18){
+        //     // Body of if
+        //     console.log('Eligible')
+
+        //     alert('Eligible For Driving!') //o/p in pop up msg
+        // }
+
+        //2. if-else
+        // if - true then else - false
+
+        // let age = 11
+
+        // if(age>=18){
+        //     // Body of if
+        //     console.log('Eligible')
+
+        //     alert('Eligible For Driving!') //o/p in pop up msg
+
+        // }else{
+        //     alert('Age should be 18 or above 18 !')
+
+        // }
+
+        //3. else if - Multiple Conditions
+
+        //Delivery charges - amount >= 500 -> free delivery
+        //Amount b/n 400-499 = 30Rs delivery charge
+        //Amount b/n 300-399 = 50Rs delivery charge
+        // Cannot place minimum cart value is 300Rs
+
+        let amount = 499.99
+
+        if(amount >= 500){
+
+            alert('FREE DELIVERY')
+
+        }
+        else if(amount >= 400){
+
+            alert('Delivery charge is 30Rs')
+
+        }
+        else if(amount >= 300){
+
+            alert('Delivery charge is 50Rs')
+
+        }
+        else{
+            alert('Cannot place order. Minimum cart value is 300')
+        }
+
+    </script>
+</body>
+</html>
