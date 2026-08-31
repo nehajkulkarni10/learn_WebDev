@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array - ["string", number, boolean]
+        // Index number starts from zero
+
+        var fruits = ["Apple", "Watermelon", "Mango"]
+
+        //Array methods
+
+        //1. length - number of data
+
+        console.log(fruits.length)
+
+        //2. Add data to array 
+        //i. Push ('New Value') - adds data at the last
+
+        fruits.push("Orange")
+        console.log(fruits)
+
+        //ii. unshift("New value") - adss data at the start of the array
+
+        fruits.unshift("Kiwi")
+        console.log(fruits)
+
+        //Remove data
+        // 1. pop() - removes data from the last
+
+        fruits.pop()
+        console.log(fruits)
+
+        //2. shift() - removes data from the start
+
+        fruits.shift()
+        console.log(fruits)
+
+        // splice() - adds data in the specific position
+        // splice(Index no, 0 - keeps previous data at the index no^r . (or).  1 -  Remove the previous)
+
+        fruits.splice(1, 1, "chickoo")
+        console.log(fruits)
+
+        fruits.splice(1, 0, "Banana")
+        console.log(fruits)
+    </script>
+</body>
+</html>
