@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="xyz">Hello Guys</p>
+
+    <p id="abc">Web Development</p>
+
+    <div class="myclass">AI Developer - 0</div>
+    <div class="myclass">ML Developer - 1</div>
+
+    <p>Plain Simple Paragraph Tag</p>
+
+    <div class="box">Module 1</div>
+    <div class="box">Module 2</div>
+
+    <ul id="data">
+        
+    </ul>
+
+
+    <script>
+        //DOM
+        //Element = html tag
+        //Document = webpage
+        // Selecting methods - select means to choose html tag through js
+
+        //1. getElementById("Id Name Value") 
+
+        var ele = document.getElementById("xyz")
+        console.log(ele)
+        console.log(ele.textContent)
+
+        var ele1 = document.getElementById("abc")
+        console.log(ele1)
+
+        console.log(ele1.textContent)
+
+        //2. getElementByClass
+
+        var ele2 = document.getElementsByClassName("myclass")
+
+        console.log(ele2)
+
+        console.log(ele2[0])
+        console.log(ele2[0].textContent)
+
+        console.log(ele2[1])
+        console.log(ele2[1].textContent)
+
+        //3. Tag w/o Id or Class - TagName
+
+        var ele3 = document.getElementsByTagName("p")
+
+        console.log(ele3)
+        console.log(ele3[2])
+        console.log(ele3[2].textContent)
+
+        //4. querySelector - only selects the first element/tag
+        // FOLLOW THE RULES OF CSS SELECTOR - #IDNAME, .CLASSNAME, TAGNAME 
+
+        const xyz = document.querySelector(".box")
+
+        console.log(xyz);
+
+        //5. querySelectorALL - it selects all the elements/tags which has same class name
+
+        const pqr = document.querySelectorAll(".box")
+
+        console.log(pqr)
+        console.log(pqr[0].textContent)
+
+        //Js part
+
+        const ul = document.getElementById("data")
+
+        // create element/tag - li tag
+
+        const list = document.createElement("li")
+        list.textContent = "Water"
+
+        ul.appendChild(list)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
