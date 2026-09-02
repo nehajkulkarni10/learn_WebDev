@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+         <!-- 3 types of manipulation -->
+
+        <!-- 1. TEXT CONTENT - update text content-->
+
+        <!-- Example 1 -->
+
+         <!-- <p id="text">Hello Everyone</p>
+
+         <script>
+            const ele = document.getElementById("text")
+
+            ele.textContent = "Welcome to Web Development "
+         </script> -->
+
+        <!-- Example 2 -->
+
+        <!-- <button id="btn" onclick="Abc">Login</button>
+        <script>
+
+            function Abc(){
+
+            const ele1 = document.getElementById("btn")
+              ele1.textContent = "Logout"
+
+            }
+        </script> -->
+
+        <!-- 2. UPDATE TAG - Use innerHTML -->
+
+        <!-- Example 1 -->
+
+        <!-- <div id="xyz">This is div </div>
+        <script>
+            const ele2 = document.getElementById("xyz")
+
+            // ele2.innerHTML = "<h1>Hello Guys - I am Heading </h1>"
+
+            // ele2.innerHTML = `
+            // <div>
+            // <img src="https://images.pexels.com/photos/19453607/pexels-photo-19453607.jpeg" height = "400" width = "300">
+            // <h2>John</h2>
+            // <button>Login</button>
+            // </div>
+            
+            // `
+            // we used quote/back tick which is beside 1 - ``
+
+        </script> -->
+
+         <!-- 3. style/ css part = use .style.propertName -->
+
+         <p id="pop">Old Dull Text</p>
+         <script>
+            const ele3 = document.getElementById("pop")
+
+            ele3.textContent = "I am New Styled Tag"
+
+            ele3.style.color = "white"
+
+            ele3.style.background = "blue"
+
+            ele3.style.textAlign = "center"
+         </script>
+</body>
+</html>
