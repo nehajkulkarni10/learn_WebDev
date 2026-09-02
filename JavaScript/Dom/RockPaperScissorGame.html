@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: linear-gradient(to right, blue, lightblue);
+        }
+
+        h1{
+            color: #333;
+        }
+
+        .choices{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .choices button{
+            padding: 12px;
+            margin: 10px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .rock{ background-color: #ffcc00;}
+        .paper{background-color: #66ccff;}
+        .scissors{background-color: #ff6666;}
+
+        #results{
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .scoreboard{
+            background-color: white;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            display: block;
+            box-shadow: 0 0 15px red;
+        }
+
+        .reset{
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 15px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="choices">
+        <button class="rock" onclick="playGame('rock')">ROCK</button>
+
+        <button class="paper" onclick="playGame('paper')">PAPER</button>
+
+        <button class="scissors" onclick="playGame('scissors')">SCISSORS</button>
+    </div>
+
+    <p id="results">Choose an Option To Start The Game</p>
+
+    <div class="scoreboard">
+        <p><strong>Scoreboard</strong> </p>
+        <p>Wins:   <span id="wins">0</span> </p>
+        <p>Losses: <span id="losses">0</span> </p>
+        <p>Draw:   <span id="draw">0</span> </p>
+        <!-- span tag- only takes required amt of space, and it can be used inside any tag. -->
+
+    </div>
+
+    <button class="reset" onclick="resetGame()">Reset</button>
+
+    <script>
+        let wins = 0
+        let losses = 0
+        let draw = 0
+
+        function playGame(userChoice){
+
+            const choices = ["rock", "paper", "scissors"]
+
+            const computerChoice = choices[ Math.floor(Math.random()*3) ]
+
+            let resultMessage = ''
+
+            if(userChoice === computerChoice ){
+                resultMessage = 'You pick the same option, It is Draw ' + userChoice;
+                draw++
+            }
+            else if(
+                (userChoice === 'rock' && computerChoice === 'scissors') ||
+                (userChoice === 'paper' && computerChoice === 'rock')    ||
+                (userChoice === 'scissors' && computerChoice === 'paper')
+            ){
+                resultMessage = 'You Won ' + userChoice + ' Beats ' + computerChoice
+                wins++
+
+            }else{
+                resultMessage = 'You Lose ' + computerChoice + ' Beats ' + userChoice
+                losses++
+
+            }
+
+            document.getElementById("results").innerHTML = resultMessage
+
+            document.getElementById("wins").innerHTML = wins
+
+            document.getElementById("losses").innerHTML = losses
+
+            document.getElementById("draw").innerHTML = draw
+
+        }
+
+        //Reset Game function
+
+        function resetGame(){
+            wins = 0
+            losses = 0
+            draw = 0
+
+            document.getElementById("wins").innerHTML = wins
+            document.getElementById("losses").innerHTML = losses
+            document.getElementById("draw").innerHTML = draw
+
+            document.getElementById("results").innerHTML = "Choose an Option To Start The Game"
+        }
+    </script>
+</body>
+</html>

@@ -12,11 +12,15 @@
         function Theme(){
             const button = document.getElementById("btn")
 
-            button.textContent = "☀️"
+            if(document.body.style.background === "black"){
+                document.body.style.background = "white"
+                button.textContent = "🌙"
 
-             //select entire webpage - body tag. 
-
-            document.body.style.background = "black"
+            }
+            else{
+                document.body.style.background = "black"
+                button.textContent = "☀️"
+            }
         }
 
         
