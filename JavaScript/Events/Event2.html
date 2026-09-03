@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            overflow: auto;
+        }
+
+        .content{
+            height: 300px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To Event</h1>
+
+    <input id="myInput" placeholder="Type Something">
+
+    <div id="mydiv">
+        <div class="content">Scroll inside me</div>
+
+    </div>
+
+    <script>
+
+        const input = document.getElementById("myInput")
+
+        const div = document.querySelector("#mydiv")
+
+         //MouseOver - 
+         function handleMouseOver(){
+            div.style.backgroundColor = "red"
+         }
+
+         div.addEventListener("mouseover", handleMouseOver)
+
+
+         //MouseOut
+
+         function handleMouseOut(){
+            div.style.backgroundColor = "green"
+         }
+
+         div.addEventListener("mouseout", handleMouseOut)
+
+         
+
+    </script>
+</body>
+</html>
