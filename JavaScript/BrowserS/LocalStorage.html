@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Local Storage - Act like a Permanent storage data
+
+        //localStorage.setItem(key, value)
+
+        localStorage.setItem("cart", ["mobile", "laptop", "shoes"])
+
+        localStorage.setItem("abc", "xyz")
+
+        localStorage.removeItem("abc")
+
+        var items = localStorage.getItem("cart")
+        console.log(items)
+    </script>
+</body>
+</html>
