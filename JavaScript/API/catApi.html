@@ -3,23 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat API</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- <script>
-    const ele = document.getElementById("cat")
+    <div style="text-align: center;">
+        <h2>Random Cat Generator</h2>
 
-    // ele.innerHTML = " <img src="" id ="cat"> "
+        <button onclick="getCat()">Get Cat</button>
 
-    .src="url"
+        <div id="catContainer">
+
+        </div>
+    </div>
+
+    <script>
+        async function getCat() {
+             
+            const container = document.getElementById("catContainer")
+
+            //Show Loading
+            container.innerHTML = "Loading cat ...🐈‍⬛"
+
+            //Fetch Data from- API
+            const res =    await  fetch("https://api.thecatapi.com/v1/images/search")
+
+            console.log(res)
+
+            const data =   await   res.json()
+
+            console.log(data)
+
+            //Extract Image Url
+             const catImage = data[0].url;
+
+             //Display Image
+             container.innerHTML = `<img src="${catImage}"     width="300" />`
 
 
 
-        fetch("https://api.thecatapi.com/v1/images/search")
-
-        .then(response => response.json())
-        .then(data => console.log(data))
-        
-    </script> -->
+        }
+    </script>
 </body>
 </html>

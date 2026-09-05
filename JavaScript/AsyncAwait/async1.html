@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //async keyword - helps to create async function
+        //await - handling the waiting time
+
+        //Promises
+        //Task 1 - step 3
+        function loadMovie(movieName){
+
+            return new Promise( (resolve, reject)=>{
+
+                console.log(`Loading ${movieName}...`)
+
+                setTimeout(()=>{
+                    resolve(` ${movieName} is Ready to watch`)
+            },5000)
+            } )
+        }
+        //this function will give the output - ie loadMovie
+
+            //async function create
+            //task 2 - 1st step
+
+            async function watchMovie(){
+                console.log("Getting ready to watch the movie ..")
+
+                let MovieMessage = await loadMovie("Avengers")
+
+                console.log(MovieMessage)
+
+                console.log("Enjoy The Weekend")
+            }
+            watchMovie()
+
+            //task 3 - 2nd step
+            function add(){
+                console.log("Addition is " , 2+2)
+            }
+            add()
+    </script>
+</body>
+</html>
