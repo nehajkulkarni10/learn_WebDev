@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // https://randomuser.me/api
+
+
+        // 1. fetch('API Address'); Method - To get the data from Api
+        
+        //Rule 1: Convert data to  -- .json()
+        // JSON(Java script object(key-value pairs) notation) Format
+
+        fetch("https://randomuser.me/api")
+
+        //2. .then() method - Output when it is successfully get the data from api
+
+        .then(response => response.json())
+        .then(data => console.log(data.results))
+
+        //3. .catch() method - Output when it is unsuccessful to get the data from api
+
+        .catch(error => console.log("Error connecting" , error))
+        
+
+
+    </script>
+</body>
+</html>
